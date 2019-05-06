@@ -9,3 +9,16 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(gsans.woff2) format('woff2');
+    src: local('Open Sans'), local('OpenSans'), url(PSans/psr.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Product Sans Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(PSans/psb.ttf) format('truetype');
+}

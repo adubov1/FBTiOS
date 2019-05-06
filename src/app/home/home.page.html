@@ -1,14 +1,113 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<meta name="viewport" content="initial-scale=1,user-scalable=no, width=device-width, height=device-height, viewport-fit=cover">
+<style>
+p {
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+.prime {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  right: 4%;
+  top: -70%;
+}
+.sec {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  right: -2%;
+  top: -82%;
+}
+.secp {
+  line-height: 25px;
+  text-align: center;
+  font-size: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ededed;
+}
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 400;
+  padding-top: 20px;
+  padding-left: 35px;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+h2 {
+  text-align: center;
+  font-family: Product Sans Bold;
+  font-size: 150px;
+  color: #ededed;
+}
+ion-content {
+  --overflow: hidden;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  font-family: Product Sans;
+}
+ion-card {
+  margin-bottom: 10%;
+  padding-bottom: 5px;
+}
+.head {
+  position: fixed;
+   top: 1.25rem;
+   top: constant(safe-area-inset-top);
+   top: env(safe-area-inset-top);
+}
+</style>
+
+
+<ion-content class="head no-scroll">
+  <h1><b>ROUTES</b></h1>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>22 → Deming
+        <span class="sec"><p class="ion-float-right secp">{{ convertData(datattdem2) }}</p></span>
+        <span class="prime"><p class="ion-float-right">{{ convertData(datattdem) }}</p></span>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>36 → Deming
+        <span class="sec"><p class="ion-float-right secp">{{ convertData(datatsdem2) }}</p></span>
+        <span class="prime"><p class="ion-float-right">{{ convertData(datatsdem) }}</p></span>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>22 → Division
+        <span class="sec"><p class="ion-float-right secp">{{ convertData(datattdiv2) }}</p></span>
+        <span class="prime"><p class="ion-float-right">{{ convertData(datattdiv) }}</p></span>
+    </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>36 → Division
+        <span class="sec"><p class="ion-float-right secp">{{ convertData(datatsdiv2) }}</p></span>
+        <span class="prime"><p class="ion-float-right">{{ convertData(datatsdiv) }}</p></span>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <div>
+    <h2>FBT</h2>
   </div>
 </ion-content>
